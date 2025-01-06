@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    
+   <h1>Carpeta pruebas</h1>
+
+   <script>
+
+    //Verificar las palabras
+    fetch("http://localhost:3000/verificar", {
+        method: "POST",
+        body: JSON.stringify({ texto : "datos" }),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+    .then(respuesta => respuesta.json())
+    .then(x => console.log("Respuesta del servidor: ", x))
+    .catch(error => console.error("Error:", error));
+
+   </script>
+
+</body>
+</html>
