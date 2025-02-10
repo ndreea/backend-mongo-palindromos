@@ -1,4 +1,4 @@
-# BackEnd Paíndromos 🧩
+# BackEnd - Gestor de Paíndromos 🧩
 Este repositorio contiene el backend del Proyecto Final de un Gestor de Palíndromos.
 
 ## Tecnologías utilizadas
